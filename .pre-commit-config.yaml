@@ -3,6 +3,8 @@ repos:
     rev: 1.8.0
     hooks:
     -   id: bandit
+        args: ["--skip", "B101"]  # Skip assert_used warnings
+        exclude: "test_*.py"    # Skip test files
 -   repo: https://github.com/psf/black
     rev: 24.10.0
     hooks:
