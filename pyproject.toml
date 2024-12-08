@@ -1,7 +1,20 @@
 [project]
 name = "gencrt"
 version = "0.1.0"
-description = "Add your description here"
+description = "A package implementing the generalized Chinese remainder theorem (CRT) algorithm."
 readme = "README.md"
+authors = [
+    { name = "SL2000s" }
+]
 requires-python = ">=3.12"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
