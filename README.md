@@ -5,7 +5,7 @@
 ## Features
 
 - Solve modular equations using the **generalized CRT** algorithm.
-- Support for multiple congruences of the form \( x \equiv a_i \pmod{n_i} \).
+- Support for multiple congruences of the form `x ≡ a_i (mod n_i)`.
 - Includes utility functions for:
   - Extended Euclidean Algorithm to compute the greatest common divisor (GCD) and Bézout coefficients.
   - Validation of moduli and congruences for correctness.
@@ -28,7 +28,11 @@ from gencrt import crt, extended_gcd
 
 ### Solving Modular Equations with generalized CRT
 To solve a system of modular equations:
-\[ x \equiv a_1 \pmod{n_1}, \; x \equiv a_2 \pmod{n_2}, \; \ldots \]
+```
+x ≡ a1 (mod n1)
+x ≡ a2 (mod n2)
+x ≡ a3 (mod n3)
+```
 
 ```python
 from gencrt import crt
@@ -59,14 +63,14 @@ print(f"GCD: {gcd}, x: {x}, y: {y} (Bézout coefficients)")
 ### `crt(congruences: Iterable)`
 - **Description**: Solves a system of modular equations using the generalized CRT.
 - **Parameters**:
-  - `congruences`: An iterable of tuples \((a_i, n_i)\).
-- **Returns**: Integer solution \( x \) modulo the product of moduli, or `None` if no solution exists.
+  - `congruences`: An iterable of tuples `(a_i, n_i)`.
+- **Returns**: Integer solution ` x ` modulo the product of moduli, or `None` if no solution exists.
 
 ### `extended_gcd(a: int, b: int)`
 - **Description**: Computes the GCD of two integers and Bézout coefficients.
 - **Parameters**:
   - `a, b`: Integers.
-- **Returns**: A tuple \((\text{GCD}, x, y)\).
+- **Returns**: A tuple `(\text{GCD}, x, y)`.
 
 ## License
 
