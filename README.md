@@ -70,7 +70,7 @@ print(f"GCD: {gcd}, x: {x}, y: {y} (Bézout coefficients)")
 - **Description**: Computes the GCD of two integers and Bézout coefficients.
 - **Parameters**:
   - `a, b`: Integers.
-- **Returns**: A tuple `(\text{GCD}, x, y)`.
+- **Returns**: A tuple `(GCD, x, y)`.
 
 ## License
 
